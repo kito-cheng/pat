@@ -23,6 +23,7 @@
 #if defined(HAVE_LINUX_PERF_EVENT_H)
 #include <linux/perf_event.h>
 #include <sys/ioctl.h>
+#include <sys/syscall.h>
 #include <cstring>
 #include <cstdlib>
 #ifndef __NR_perf_event_open
