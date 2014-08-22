@@ -120,6 +120,6 @@ pat::BasicOStringBuf<CharT, Traits, Alloc>::xsputn(const char_type* pS,
 template<typename CharT, typename Traits, typename Alloc>
 pat::BasicOStrStream<CharT, Traits, Alloc>::BasicOStrStream(string_type& pStr,
                                                   std::ios_base::openmode pMode)
-  : ostream_type(), m_StringBuf(pStr, pMode | std::ios_base::out) {
+  : ostream_type(NULL), m_StringBuf(pStr, pMode | std::ios_base::out) {
   this->init(&m_StringBuf);
 }
