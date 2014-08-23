@@ -6,3 +6,4 @@ multi_expect/multi_expect
 pat_c/pat_c
 performance/performance
 smoke/smoke
+thread/thread
